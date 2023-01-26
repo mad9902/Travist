@@ -60,10 +60,13 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('show_profile') }}">
+                                    Edit Profile
+                                </a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
+                                    Logout
                                 </a>
 
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -84,7 +87,9 @@
             <div class="row">
                 <div class="col-md-6">
                     <h2 class="footer-title text-info">About</h2>
-                    <p class="footer-desc">Travist merupakan suatu website yang akan membantu anda untuk berpergian kemana saja dan kapan saja. selain itu website ini juga dapat membantu anda untuk menemukan tempat wisata pilihan yang pastinya terbaik!</p>
+                    <p class="footer-desc">Travist merupakan suatu website yang akan membantu anda untuk berpergian
+                        kemana saja dan kapan saja dan tentunya sangat murah. Website ini mengumpulkan destinasi wisata dengan diskon yang melimpah. selain itu website ini juga dapat membantu anda untuk menemukan
+                        tempat wisata pilihan yang pastinya terbaik!</p>
                 </div>
                 <div class="col-md-3">
                     <h2 class="footer-title text-info">Contact Us</h2>
@@ -92,7 +97,7 @@
                         <li><a>Jakarta Barat</a></li>
                         <li><a>Indonesia</a></li>
                         <li><a>081212147513</a></li>
-                        <li><a>anis@gmail.com</a></li>
+                        <li><a>travist@gmail.com</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">

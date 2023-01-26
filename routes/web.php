@@ -34,6 +34,9 @@ Route::get('/success-order', [ContentController::class, 'success_order']);
 Route::any('/search', [ContentController::class, 'search'])->name('search');
 Route::get('/reset_password', [ContentController::class, 'resetPassword'])->name('reset_password');
 
+Route::get('/my-profile', [ContentController::class, 'profile'])->name('show_profile')->middleware('auth');
+Route::put('/my-profile', [ContentController::class, 'editProfile'])->name('edit_profile')->middleware('auth');
+
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
